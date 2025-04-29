@@ -6,7 +6,7 @@
 # @Description: 常量文件
 
 # 传统色
-nature_color = list('红黄蓝绿紫金银黑白灰')
+nature_color_adj = list('红黄蓝绿紫金银黑白灰')
 """
 红： 代表红色，是喜庆、热情、繁荣的象征。
 白： 代表白色，通常象征纯洁、清新、无暇。
@@ -21,7 +21,7 @@ nature_color = list('红黄蓝绿紫金银黑白灰')
 """
 
 # 衍生色
-derivative_color = list('青粉素朱赤丹棕褐绯染')
+derivative_color_adj = list('青粉素朱赤丹棕褐绯染彩')
 """
 青： 与蓝绿色相关，也有年轻、清新的联想。
 绯： 联想到红色，也带有浓郁、鲜艳的情感。
@@ -35,7 +35,7 @@ derivative_color = list('青粉素朱赤丹棕褐绯染')
 """
 
 # 代表植物的颜色
-plant_color = list('竹荷茶苏麦玫瑰枫棉柳茉艾莲柠檬')
+plant_adj = list('竹荷茶苏麦玫瑰枫棉柳茉艾莲柠檬兰')
 """
 麦： 象征着麦田、丰收，可能与麦色等相关的丰饶和美好情感有关。
 玫： 象征着玫瑰花的颜色，可能与玫瑰色等相关的浪漫和温柔情感有关。
@@ -47,7 +47,7 @@ plant_color = list('竹荷茶苏麦玫瑰枫棉柳茉艾莲柠檬')
 """
 
 # 代表物品的颜色
-stuff_color = list('雪奶琉玉')
+stuff_adj = list('雪奶琉玉')
 """
 琉： 联想到琉璃的颜色，也许能够唤起光彩、透明感。
 玉： 像玉石一样的高贵、洁白，可能与绿色、白色等相关的清雅和高贵情感有关。
@@ -56,7 +56,7 @@ stuff_color = list('雪奶琉玉')
 """
 
 # 天气的形容词
-climate_adj = list('郎清翠碧悠清晴熏密弥漫')
+climate_adj = list('郎清翠碧悠清晴熏密弥漫柔春夏秋冬雨黎晚雾')
 """
 朗： 联想到明亮、清澈，与白色或光线有关。
 翠： 联想到翠绿的颜色，可以用于描绘自然的生机与美丽。
@@ -67,7 +67,7 @@ climate_adj = list('郎清翠碧悠清晴熏密弥漫')
 """
 
 # 代表水果的颜色
-fruit_color = list('栗柿杏桃橙柚荔莓芒枣橘橄')
+fruit_adj = list('栗柿杏桃橙柚荔莓芒枣橘橄')
 """
 橙： 象征着活力、温暖，可能与橙色等相关的积极和光明情感有关。
 杏： 象征着杏黄色，可能与杏色等相关的柔和和温暖情感有关。
@@ -75,6 +75,15 @@ fruit_color = list('栗柿杏桃橙柚荔莓芒枣橘橄')
 橄： 象征着橄榄色，可能与橄榄色等相关的自然和健康情感有关。
 桃： 象征着桃色、温柔，可能与桃色等相关的柔美和甜蜜情感有关。
 """
+
+# 心情的形容词
+mood_adj = list('愉喜')
+"""
+"""
+
+# 景色的形容词
+scene_adj = list('花')
+
 
 # 表示天气的物体
 climate_stuff = list('晨风露云')
@@ -86,7 +95,7 @@ climate_stuff = list('晨风露云')
 """
 
 # 表示自然的物体
-nature_stuff = list('木森林')
+nature_stuff = list('木森林海空日月')
 """
 """
 
@@ -111,10 +120,26 @@ culture_stuff = list('梦舞音影琴棋书画')
 画： 联想到绘画、美景，适合用来描述美丽的事物。
 """
 
+# 表示位置的物体
+location_stuff = list('间')
+
+
 # 场所地方
 site_place = ['公园', '广场', '乐园', '社区']
 
 # 区域地方
 region_place = ['县', '市', '州', '省']
+
+# 道路
+road_place = ['街', '路', '巷', '弄', '大道']
+
+# 自然地点
+nature_place = ['山', '江']
+
+
+# 注册列表：三部分的可选列表范围
+adj_part_list = [derivative_color_adj, plant_adj, stuff_adj, climate_adj, fruit_adj, scene_adj]
+stuff_part_list = [climate_stuff, animal_stuff, culture_stuff, location_stuff]
+place_part_list = [site_place]
 
 # print(list(vars().keys()))

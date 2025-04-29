@@ -64,8 +64,9 @@ def filter_list(data_list, rules=['repetition', 'homophone']):
     return data_list
 
 
-# 测试
-print(filter_list(data_list=['杨公园', '杨公园', '杨洋公园']))
+if __name__ == '__main__':
+    # 测试
+    print(filter_list(data_list=['杨公园', '杨公园', '杨洋公园']))
 
 
 
